@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- ctrl shift h -->
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+    body {
+      display: grid;
+      background: yellow;
+    }
+
+    ul {
+      background: red;
+    }
+  </style>
+</head>
+
+
+<body>
+  <h1>Students</h1>
+  <ul>
+    {% for student in students %}
+    <li>{{ student.name }}</li>
+    {% endfor %}
+  </ul>
+
+</body>
+<script src="http://localhost:35729/livereload.js">
+
+</script>
+
+</html>

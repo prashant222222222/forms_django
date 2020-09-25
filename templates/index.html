@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+    .block {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+
+    {% for field in form %}
+    <label for="{{ field.id_for_label }}">{{ field.name }}</label>
+    <input name="{{ field.name }}" class="block" id="{{ field.id_for_label }}">
+    <!--  {{ form }} -->
+    {% endfor %}
+  </form>
+</body>
+
+</html>
